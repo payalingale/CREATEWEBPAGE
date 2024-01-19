@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #55e6c1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100vh;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px 30px 10px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(11, 1, 1, 0.3);
+}
+.content {
+  display: flex;
+  padding: 20px;
+  height: 25%;
+}
+.content .left .side ::before {
+  margin: 10px;
+  padding: 10px;
+}
+.content i {
+  color: #3b3b98;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+.content .topics {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.content .text-one,
+.content .text-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cad3c8;
+}
+.rightTitle {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  color: #3b3b98;
+  margin-bottom: 10px;
+}
+
+.inputTopics {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.inputTopics input,
+textarea {
+  margin-bottom: 10px;
+  background-color: #f0f1f8;
+  border: none;
+  padding: 10px;
+  margin-left: 10px;
+  resize: none;
+}
+
+.inputTopics input[type="button"] {
+  background-color: #3b3b98;
+  color: #fff;
+}
