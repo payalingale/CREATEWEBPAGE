@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title class="title">12-Advance Function Exercise</title>
+</head>
+
+<body>
+  <!-- <button style="font-size: 15px;border: none;" class="js-start-button" onclick="changeButtonText()">START</button>
+  <button style="font-size: 15px;" class="js-start-button" onclick="addToCartButtonChanges()">Add to
+    Cart</button>
+  <div class="js-display-text"></div> -->
+  <button onclick="increaseCounter()">Add</button>
+  <button onclick="decreaseCounter()">Remove</button>
+
+</body>
+<script>
+
+
+  let counter = 0;
+  let result = []
+  const mutliply = (no1, no2) => no1 * no2;
+
+
+
+
+  const countPositive = (nums) => {
+    nums.forEach(element => {
+      if (element >= 0) counter++;
+    });
+    return counter;
+  }
+
+  console.log(mutliply(8, 9));
+
+  console.log(countPositive([1, 4, 6, -9]))
+
+
+  const addNum = (array, num) => {
+    array.forEach((value, index) => result.push(value + num))
+  }
+
+  console.log(addNum([1, 2, 3], 2))
+
+
+  const removeEgg = (foods) => {
+    foods.filter(() => {
+
+    })
+  }
+
+  /*
+  counter = 0;
+  function increaseCounter() {
+    setInterval(function () {
+      document.querySelector('.title').innerHTML = `${counter++} Messages`
+    }, 1000)
+  }
+
+  function decreaseCounter() {
+    setInterval(function () {
+      document.querySelector('.title').innerHTML = `${counter--} Messages`
+    }, 1000)
+  }
+*/
+  // function changeButtonText() {
+  //   const startButton = document.querySelector('.js-start-button');
+
+  //   setTimeout(function () {
+
+  //     startButton.innerHTML = 'FINISHED';
+  //   }, 4000)
+  //   startButton.innerHTML = "LOADING..."
+  // }
+  // function addToCartButtonChanges() {
+  //   const html = `<p>Added</p>`
+  //   const displayText = document.querySelector('.js-display-text')
+  //   displayText.innerHTML = html;
+  //   setTimeout(function () {
+  //     displayText.innerHTML = '';
+  //   }, 2000)
+
+  // }
+
+</script>
+
+</html>

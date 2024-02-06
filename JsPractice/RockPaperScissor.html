@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+  <p>Rock Paper Scissors</p>
+  <button onclick="computerData(Math.random()),userMove='Rock' ,displayResult()">Rock</button>
+
+  <button onclick=" userMove='Paper',displayResult()">Paper</button>
+
+  <button onclick="userMove='Scissor',displayResult()">Scissor</button>
+</body>
+<script>
+  let randomNumber = 0;
+  let computerSelection = "";
+  let userMove = ""
+
+  function computerData(randomNumber) {
+    if (randomNumber >= 0 && randomNumber < 1 / 3) {
+      computerSelection = 'Rock';
+    }
+    else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+      computerSelection = 'Paper';
+    }
+    else if (randomNumber >= 2 / 3 && randomNumber < 1) {
+      computerSelection = 'Scissor';
+    }
+    // console.log(computerSelection, userMove)
+  }
+
+  function displayResult() {
+    if (userMove === "Rock" && computerSelection === "Scissor") {
+      console.log('User Wins')
+    }
+    else if (computerSelection === 'Rock' && userMove === 'Scissor') {
+      console.log('Computer Wins')
+    }
+
+    if (userMove === "Paper" && computerSelection === "Rock") {
+      console.log('User Wins')
+    }
+    else if (computerSelection === 'Paper' && userMove === 'Rock') {
+      console.log('Computer Wins')
+    }
+
+    if (userMove === "Scissor" && computerSelection === "Paper") {
+      console.log('User Wins')
+    }
+    else if (computerSelection === 'Scissor' && userMove === 'Paper') {
+      console.log('Computer Wins')
+    }
+
+  }
+
+
+</script>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transition-Hover-Opacity</title>
+</head>
+<style>
+  .uberBtn {
+    background-color: black;
+    color: #fff;
+    border: none;
+    height: 50px;
+    width: 90px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: opacity 0.15s;
+    border-radius: 2px;
+  }
+
+  .uberBtn:hover {
+    opacity: 0.6;
+  }
+
+  .amazonBtn {
+    background-color: rgb(229, 229, 9);
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.20s;
+  }
+
+  .amazonBtn:hover {
+    background-color: rgb(134, 125, 10);
+  }
+
+  .gitHubBtn {
+    margin: 10px;
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: rgb(14, 177, 60);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: box-shadow o.20s;
+  }
+
+  .gitHubBtn:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  .bootStrapGetStarted {
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: rgb(85, 42, 126);
+    color: #fff;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.15s;
+  }
+
+  .bootStrapGetStarted:hover {
+    background-color: rgb(155, 97, 38);
+    color: rgb(85, 42, 126);
+
+  }
+
+  .bootStrapDownload {
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    border: none;
+    background-color: rgb(27, 190, 205);
+    color: black;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.15s;
+  }
+
+  .bootStrapDownload:hover {
+    background-color: rgb(155, 97, 38);
+    color: rgb(85, 42, 126);
+  }
+
+  .applyLink {
+    height: 70px;
+    width: 200px;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 35px;
+    margin: 10px;
+    transition: 0.15s;
+  }
+
+  .applyLink:hover {
+    border: 3px solid rgb(21, 23, 1);
+  }
+</style>
+
+<body>
+  <div>
+    <div>Uber</div>
+    <button class="uberBtn">Request now</button>
+  </div>
+
+  <div>
+    <div>Amazon</div>
+    <button class="amazonBtn">Add to cart</button>
+  </div>
+
+  <div>
+    <div>GitHub</div>
+    <button class="gitHubBtn">Sign up</button>
+  </div>
+
+  <div>
+    <div>Bootstrap</div>
+    <button class="bootStrapGetStarted">Get started</button>
+    <button class="bootStrapDownload">Download</button>
+  </div>
+
+  <div>
+    <div>LinkedIn</div>
+    <button class="applyLink">Apply on company website</button>
+  </div>
+
+</body>
+
+</html>

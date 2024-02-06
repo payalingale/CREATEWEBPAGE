@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .js-add-to-cart {
+    background-color: rgb(255, 216, 18);
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+  }
+
+  .js-request-now {
+    background-color: black;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .js-schedule-later {
+    background-color: black;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .isToggled {
+    background-color: grey;
+    color: black;
+    border: none;
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+</style>
+
+<body>
+  <div>
+    <button class="js-add-to-cart">Add to Cart</button>
+  </div>
+  <div>
+    <button class="js-request-now" onclick="toggle()">Request now</button>
+    <button class="js-schedule-later" onclick="toggle()">Schedule for later</button>
+  </div>
+</body>
+<script>
+  function toggle() {
+    let requestNow = document.querySelector('.js-request-now')
+
+
+    if (!requestNow.classList.contains('isToggled')) {
+      requestNow.classList.add('isToggled')
+    }
+    else {
+      requestNow.classList.remove('isToggled')
+    }
+
+
+
+  }
+
+</script>
+
+</html>
